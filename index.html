@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Document</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div id="editor">
+        <p>Hello World!</p> 
+    </div>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script>
+        var quill = new Quill('#editor', {
+            modules: {
+                toolbar: [
+                    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                    [{ 'font': [] }],
+                    [{ 'size': [] }],
+                    ['bold', 'italic', 'underline', 'strike'],       
+                    [{ 'color': [] }, { 'background': [] }],         
+                    [{ 'script': 'sub'}, { 'script': 'super' }],
+                    [{ 'header': 1 }, { 'header': 2 }],              
+                    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                    [{ 'indent': '-1'}, { 'indent': '+1' }],         
+                    [{ 'direction': 'rtl' }],                        
+                    [{ 'align': [] }],
+                    ['clean']                                        
+                ]
+            },
+            theme: 'snow'
+        });
+    </script>
+
+</body>
+</html>
