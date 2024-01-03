@@ -3,3 +3,7 @@
 #editor {
   height: 300px;
 }
+.ql-syntax {
+    background: #23241f;
+    color: #f8f8f2;
+  }
