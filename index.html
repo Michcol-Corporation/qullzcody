@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <title>Tytuł Twojej Strony</title>
+    <!-- Link do arkusza stylów Quill -->
+    <link href="node_modules/quill/dist/quill.snow.css" rel="stylesheet">
 </head>
-
-
-<html>
-
 <body>
 
-    <div id="editor">
-        <p>Hello World!</p> 
-    </div>
+    <!-- Kontener na edytor Quill -->
+    <div id="editor"></div>
+    <button id="get-content">Pokaż treść</button>
+    <button id="save-content">Zapisz treść</button>
 
-    
-
-    
-  
- <script src="script.js"></script>
+    <!-- Skrypty -->
+    <script src="node_modules/quill/dist/quill.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
